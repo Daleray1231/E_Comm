@@ -1,66 +1,86 @@
 # Simple E-commerce Backend
 
+![Project Screenshot](images/screenshot.png)
+
+## Table of Contents
+- [About](#about)
+  - [Why I did this?](#why-i-did-this)
+  - [What it tackles?](#what-it-tackles)
+  - [Key Takeaways](#key-takeaways)
+- [Setup Guide](#setup-guide)
+- [How to Use](#how-to-use)
+- [Tech Used](#tech-used)
+- [Credits](#credits)
+- [Contributing](#contributing)
+- [Testing](#testing)
+
 ## About
 
-This project is the backbone of an online store. A strong backend is crucial for any online business, especially in the growing world of e-commerce.
+This project serves as the backbone of an online store, providing a robust backend crucial for any e-commerce business.
 
-- **Why I did this?**
-  - To practice ORM, work with Sequelize, and gear up for a backend development career.
+### Why I did this?
+To practice ORM, work with Sequelize, and prepare for a backend development career.
 
-- **What it tackles?**
-  - It offers an API for an e-commerce platform's backend.
+### What it tackles?
+It offers an API for an e-commerce platform's backend.
 
-- **Key Takeaways**
-  - Setting up a Sequelize project, integrating it into an Express.js API, and creating different types of API routes.
+### Key Takeaways
+Setting up a Sequelize project, integrating it into an Express.js API, and creating different types of API routes.
 
 ## Setup Guide
 
-1. Clone this GitHub repository
-   [CLONE ME](https://github.com/Daleray1231/E_Comm)
-  
-2. Go to the project folder in your terminal and install required npm packages.
-cd <Your-Project-Directory>
-npm install express sequelize mysql2 dotenv
-npm install --save-dev jest
+1. Clone this GitHub repository: [CLONE ME](https://github.com/Daleray1231/E_Comm)
+   
+2. Navigate to the project folder in your terminal and install required npm packages:
+```bash
+ cd <Your-Project-Directory>
+ npm install express sequelize mysql2 dotenv
+ npm install --save-dev jest
+```
 
-3. Create a .env file in the root directory for your MySQL username, password, and database name.
+3. Create a .env file in the root directory for your MySQL username, password, and database name:
+```bash
+.env
+Copy code
 DB_NAME='your_database_name'
 DB_USER='your_username'
 DB_PASS='your_password'
+```
 
-4. Run this command to seed your MySQL database.
-`npm run seed`
+4. Run this command to seed your MySQL database:
 
-5. Start the Express.js server with this command.
-`npm start`
+```bash
+npm run seed
+```
+
+5. Start the Express.js server with this command:
+```bash
+npm start
+```
 
 ## How to Use
+Use tools like Insomnia Core to test the API endpoints.  
+The API enables you to manage Categories, Products, and Tags with functions like fetching, creating, updating, and deleting.
 
-Use tools like Insomnia Core to test the API endpoints. The API enables you to:
+## E-commerce Backend Demo
 
-- Manage Categories, Products, and Tags with functions like fetching, creating, updating, and deleting.
+[Demo Video](https://share.vidyard.com/watch/zKe7kDWXtUUoc9QourEKUB?)
 
-[E-commerce Backend Demo](https://share.vidyard.com/watch/zKe7kDWXtUUoc9QourEKUB?)
+## Tech Used
+- Sequelize
+- MySQL2
+- Express.js
+- Dotenv
 
 ## Credits
-
-- [Sequelize](https://sequelize.org/)
-- [MySQL2](https://www.npmjs.com/package/mysql2)
-- [Express.js](https://expressjs.com/)
-- [Dotenv](https://www.npmjs.com/package/dotenv)
-- Starter Code and Usage .gif: [University of Texas at Austin Coding Bootcamp](https://bootcamp.cvn.utexas.edu/)
-
-## License
-
+University of Texas at Austin Coding Bootcamp
+License
 MIT
 
----
-
 ## Contributing
-
 Fork the project and submit your changes via pull request.
 
 ## Testing
+Run npm run seed to fill the database with test data.
+Use Insomnia Core to test all API routes.
 
-1. Run `npm run seed` to fill the database with test data.
-2. Use Insomnia Core to test all API routes.
